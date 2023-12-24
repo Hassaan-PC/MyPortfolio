@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo"> Air University Kamra </div>
+            <div class="menu" id="navlinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <a href="index.html" > Home </a> 
+                <a href="about.html" > About </a> 
+                <a href="services.html"> Services </a> 
+                <a href="contact.html"> Contact </a>
+                
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        
+        </nav>
+
+
+        <div class="container">
+            <div class="left">
+              
+                <h2> Hi, I am Hassaan Adeel </h2> <br>
+                <h1> Freelancer </h1> <br>
+                <p>
+                    I love Graphic Design and Photography and have been working on my portfolio since 2022.
+                    I can give your Bussiness a new Creative start right away!
+                </p>
+                <br>
+                <br>
+
+                <form>
+                    <input type="text" placeholder="Designs"> <br><br>
+                    <button type="submit" class="btn">Search</button>
+                </form>
+
+            </div>
+        </div>
+                    
+    </header>
+
+<section id="bio">
+    <div class="leftbio">
+        <img src="https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg"> 
+    </div>
+    <div class="rightbio">
+        <div>
+            <p style="font-size: larger;"> MY BIOGRAPHY </p>
+            <h1> A lead UI Designer & Web Developer based in PK</h1>
+            <p>
+                With over 4 years of experience, I'm a highly creative and knowledgeable Graphic Designer with a strong background in developing and executing visual design concepts. I have a proven track record of increasing website traffic, reducing design time, and increasing brand recognition and engagement.
+            </p> 
+            <hr>
+            <br><br>
+            <div id="follow">
+                <p><b> Follow me on: </b>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twiter"></i>
+                </p>    
+            </div>
+                  <div class="link-h">  
+                   <button> <a href="Hassaan.pptx" id="cv"> Download Resume </a> </button>
+                  </div>
+           
+        </div>
+    </div>    
+</section>
+
+<section id="services">
+
+    <div class="intro">
+
+        <h1> What I do for you? </h1>
+
+        <div class="card">
+
+            <div class="cardbody">
+                <i class="fa fa-lock"></i>
+                <h3> Graphic Design </h3> <br>
+                <p> 
+                    Transforming visions into visuals, where creativity meets precision in every pixel. Elevate your brand with compelling graphic design that speaks volumes.
+                </p>
+            </div>
+
+            <div class="cardbody">
+                <i class="fa fa-camera"></i>
+                <h3> Digital Marketing </h3> <br>
+                <p> 
+                    Drive digital success with strategic campaigns and compelling content. Amplify your brand's online presence and engage audiences through innovative digital marketing solutions.
+                </p>
+            </div>
+
+            <div class="cardbody">
+                <i class="fa fa-envelope"></i>
+                <h3> SEO </h3> <br>
+                <p> 
+                    Elevate your online visibility with strategic SEO solutions. Unlock higher rankings and organic growth through tailored strategies that resonate with search engines and captivate your audience
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardbody">
+                <i class="fa fa-lock"></i>
+                <h3> Web Development </h3> <br>
+                <p> 
+                    Crafting dynamic digital experiences through innovative web development. We turn ideas into interactive realities, building responsive and user-centric websites that leave a lasting impression.
+                </p>
+            </div>
+
+            <div class="cardbody">
+                <i class="fa fa-camera"></i>
+                <h3> App Development </h3> <br>
+                <p> 
+                    Empower your ideas with seamless app development. From concept to code, we create intuitive and high-performance mobile applications tailored to enhance user experiences and meet your business goals.
+                </p>
+            </div>
+
+            <div class="cardbody">
+                <i class="fa fa-envelope"></i> 
+                <h3> Photography </h3> <br>
+                <p> 
+                    Capturing moments, telling stories through the lens. Elevate your visual narrative with distinctive photography that turns every frame into a timeless work of art.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    Design by Hassaan Adeel
+</footer>
+
+<!---- Javascript Function for Menu-Bar------->
+
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu() {
+        navlinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navlinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

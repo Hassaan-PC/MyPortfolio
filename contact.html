@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="about">
+        <nav>
+            <div class="logo"> Air University Kamra </div>
+            <div class="menu" id="navlinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <a href="index.html" > Home </a> 
+                <a href="about.html" > About </a> 
+                <a href="services.html" > Services </a> 
+                <a href="contact.html" > Contact </a>
+                
+            </div>
+
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+        <h1> Contact Me </h1> <br>
+    </header>
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.5020231965027!2d72.42419107480357!3d33.825161829688334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df1bf7f51a275f%3A0x349efd7c961d9ec6!2sAir%20University%20Kamra!5e0!3m2!1sen!2s!4v1703443057549!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-me">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>13 Street, MRF Colony</h5>
+                        <P>Kamra, City Attock, PK </P>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+92 3123456789</h5>
+                        <P>Monday to Friday, 10 AM to 4:30 PM</P>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>Hassaan@gmail.com</h5>
+                        <P>Email me for any query </P>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="">
+
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="text" placeholder="Enter email address" required>
+                    <input type="text" placeholder="Enter your field" required>
+                    <textarea  rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn-1">Send Message</button>
+        
+                </form>
+
+            </div>
+        </div>
+ 
+
+    </section>
+
+<footer>
+    Design by Hassaan Adeel
+</footer>
+
+<!---- Javascript Function for Menu-Bar------->
+
+
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu() {
+        navlinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navlinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
